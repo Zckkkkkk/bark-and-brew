@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "name": "Bark and Brew",
+            "path": "."
+        },
+        {
+            "path": "../Test"
+        },
+        {
+            "path": "../Bark & Brew Test"
+        }
+    ]
+}
