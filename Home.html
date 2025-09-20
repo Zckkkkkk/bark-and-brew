@@ -41,7 +41,7 @@
 
                 <nav class="navbar">
                     <a href="Home.html">Home</a>
-                    <a href="About.html">About</a>
+                    <a href="#about">About</a>
                     <a href="Menu.html">Menu</a>
                     <a href="#bestseller">Best Seller</a>
                     <a href="#gallery">Gallery</a>
@@ -53,17 +53,32 @@
             <div class="header-line"></div>
         </header>
 
-        <section class="main-img">
-            <img src="Images/Main-image.jpg" alt="Error"/>
+        <section class="main-img fade">
+            <img src="Images/Gallery/Gallery 12.jpg" alt="Error"/>
             <h1>Welcome to </br> Bark & Brew Café</h1>
         </section>
 
-        <section id="bestseller">
-            <div class="bestseller-title">
+        <section class="about" id="about">
+            <div class="about-container fade">
+                <div class="about-text">
+
+                    <h2>About Us</h2>
+                    <p>Bark & Brew Café was established on July 20 to bring something new to our community. At that time, there were no coffee shops in the area, and we wanted to create a place where people could relax, connect, and enjoy good coffee together with our pets.</p>
+
+                </div>
+
+                <div class="about-img">
+                    <img src="Images/Gallery/Gallery 7.jpg" alt="About image"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="bestseller" id="bestseller">
+            <div class="bestseller-title fade">
                 <h1>Best Seller</h1>
             </div>
         
-            <section class="products">
+            <section class="products fade">
                 <div class="product">
                     <img src="Images/Food & Pastries/Plus Ultra Smash Burger (1).jpg" alt="Error"/>
                     <p>Plus Ultra Smash Burger</p>
@@ -85,11 +100,11 @@
         </section>
 
         <section id="gallery">
-            <section class="gallery-title">
+            <section class="gallery-title fade">
                 <h1>Gallery</h1>
             </section>
             
-            <section class="carousel"> 
+            <section class="carousel fade"> 
                 <div class="gallery-carousel"> 
                     <div class="gallery-img">
                         <img src="Images/Gallery/Gallery 1.jpg" alt="Error"/>
@@ -126,12 +141,12 @@
                 </div>
             </section>
 
-            <section class="gallery-see-more">
+            <section class="gallery-see-more fade">
                 <a href="Gallery.html">See More</a>
             </section>
         </section>
         
-        <footer class="footer" id="contact">
+        <footer class="footer fade" id="contact">
             <div class="footer-container">
                 <div class="footer-img">
                     <img src="Images/Logo/Bark & Brew Café (3).png" alt="Error"/>  
@@ -166,6 +181,8 @@
                 </div>
             </div>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 
 </html>
