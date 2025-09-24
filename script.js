@@ -3,8 +3,6 @@ const observer = new IntersectionObserver((entries) => {
         if(entry.isIntersecting){
             console.log(entry.target)
             entry.target.classList.add("show")
-        }else{
-            entry.target.classList.remove("show")
         }
     })
 }, {})

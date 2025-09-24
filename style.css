@@ -99,7 +99,37 @@ nav a:hover {
   transition: all 0.3s ease;
 }
 
+/* Navbar base style */
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #402A1D;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
 
+/* Animated underline */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #402A1D;
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Keep underline on active page */
+nav a.active::after {
+  width: 100%;
+}
 
 
 
@@ -417,15 +447,15 @@ nav a:hover {
   background-color: #402A1D;
 }
 
+
+/*script*/
 .fade {
   opacity: 0;
   transition: all 1s;
   filter: blur(3px);
-  transform: translateX(-100%);
 }
 
 .fade.show {
   opacity: 1;
   filter: blur(0);
-  transform: translateX(0);
 }
